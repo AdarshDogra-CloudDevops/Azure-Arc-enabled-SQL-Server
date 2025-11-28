@@ -1,6 +1,6 @@
 # Exercise 1: Onboard the On-prem SQLServer to Azure Arc-enabled SQL Server 
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
  
 In this exercise, you will onboard an on-premises SQL Server to Azure Arc using PowerShell and the Azure Portal. First, you need to access the SQL Server virtual machine using Hyper-V Manager and log in to the Azure Portal from within the VM. Then, install the Azure Connected Machine Agent using PowerShell to prepare the server for registration. After that, run the Arc registration script to connect the on-prem SQL Server to your Azure environment. Finally, complete the setup by registering the SQL Server with Azure Arc, enabling centralized management and monitoring through the Azure Portal.
 
@@ -19,9 +19,9 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
   
    ![](media/E1T1S1.png) 
     
-1. On the **Azure Arc | SQL Server instances** page, from the left navigation pane under **Data services** select **SQL Server instances (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.  
+1. On the **Azure Arc | SQL servers** page, from the left navigation pane under **Data services** select **SQL servers (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.  
   
-   ![](media/E1T1S2.png) 
+   ![](media/ex1-p1t1p1.png) 
     
 1. In the **Add existing SQL Server instances** page, click on **Connect SQL Server instances**. 
  
@@ -110,13 +110,13 @@ In this task, you will use the previously copied script inside the sql VM that i
 
     * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    
-     ![](media/corsspf-username.png "Enter Email")
+      ![](media/corsspf-username.png "Enter Email")
     
 1. Now, enter the **Password (2)**, then click on **Sign in (2)** 
       
    * **Password:** <inject key="AzureAdUserPassword"></inject> 
 
-      ![](media/GS4.png "Enter Password")
+      ![](media/ex1-p1t2p1.png "Enter Password")
       
 1. When **Are you trying to sign into Microsoft Azure CLI?** prompted, click on **Continue** and minimize the **Browser** window. 
  
@@ -134,7 +134,7 @@ In this task, you will use the previously copied script inside the sql VM that i
 
 1. On the **Azure Arc | SQL Server instances** page, you will see one resource **SQLVM**, which we just created using the **PowerShell** script in the previous step. 
  
-   ![](media/E1T2S12.png) 
+   ![](media/ex1-p1t2p2.png) 
 
     > **Note**: If you are not able to view **SQLVM** SQL Server instances, wait for 5 minutes and keep refreshing the page.
    
@@ -154,6 +154,6 @@ In this task, you will use the previously copied script inside the sql VM that i
 
 In this exercise, you onboarded an on-prem SQL Server to Azure Arc using PowerShell commands.
 
-Now, click on **Next >>** from the lower right corner to move on to the next exercise.
+### Now, click on **Next >>** from the lower right corner to move on to the next exercise.
 
 ![](media/2-n.png)

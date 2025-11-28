@@ -1,6 +1,6 @@
 # Exercise 3: Create a Single pane of glass-managed solutions with Azure Arc 
 
-### Estimated Duration: 60 minutes
+### Estimated Duration: 60 Minutes
 
 In this exercise, you will configure a unified management dashboard using Azure Arc and Azure Monitor, creating a single pane of glass view for overseeing and managing all onboarded SQL Server instances from a centralized interface.
 
@@ -20,7 +20,7 @@ This task involves creating a centralized dashboard in the Azure Portal to monit
  
 2. On the **Azure portal** home page, from the top left corner, click **Show portal (1)** menu and then select **Dashboard (2)**. 
 
-   ![](media/image.jpg)   
+   ![](media/ex3-p3t1p1.png)   
  
 3. In the **My Dashboard** page, click **+ Create**. 
  
@@ -40,7 +40,7 @@ In this task, we will run an Azure Resource Graph query to list all SQL Servers,
      
 2. On **My Dashboard** page, under **Resource graph grid tile** click on **Configure tile**.
  
-   ![](media/E3T3S2.png)  
+   ![](media/ex3-p3t1p2.png)  
      
 3. Minimize the **Azure Portal** browser window. 
   

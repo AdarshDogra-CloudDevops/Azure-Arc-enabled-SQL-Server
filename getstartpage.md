@@ -1,6 +1,6 @@
 # Azure Arc enabled SQL Servers - Single Pane of Glass
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -87,21 +87,17 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    ![](media//portal.png)
 
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following **email/username**, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following **email/username (1)**, and click on **Next (2)**. 
 
    * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    
       ![](media/GS3.png)
      
-1. Now enter the following **password** and click on **Sign in**.
+1. Now enter the following **password (1)** and click on **Sign in (2)**.
    
    * **Password:** <inject key="AzureAdUserPassword"></inject>
    
-      ![](media/GS4.png)
-
-1. If you see the pop-up **Action Required**, click **Ask Later**.
-
-   ![](media/asklater.png)
+      ![](media/aarc-gs-password.png)
    
 1. If you see the pop-up **Stay signed in?**, select **No**.
 
@@ -161,7 +157,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. Now you will see the **Azure Portal** dashboard, then click on **Resource groups** from the **Navigate** panel to see the **Resource groups**.
 
-   ![](media/English-AzureHome.png "Resource groups")
+   ![](media/aarc-gs-16.png "Resource groups")
    
 1. Confirm that you have all **Resource groups** present as shown below.
 
