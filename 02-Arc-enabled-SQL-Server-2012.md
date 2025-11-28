@@ -1,6 +1,6 @@
 # Exercise 2: Onboard the On-prem SQLServer 2016 to Azure Arc-enabled SQL Server 
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 90 Minutes
  
 In this exercise, you will onboard an on-prem SQL Server to Azure Arc using PowerShell commands in the Azure Portal, enable Best practices assessment and Microsoft Defender for SQL.
 
@@ -21,9 +21,9 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
   
    ![](media/E1T1S1.png) 
     
-1. On the **Azure Arc | SQL Server instances** page, from the left navigation pane under **Data services** select **SQL Server instances (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.    
+1. On the **Azure Arc | SQL servers** page, from the left navigation pane under **Data services** select **SQL servers (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.    
   
-   ![](media/E2T1S2.png)
+   ![](media/ex2-p1t1p1.png)
     
 1. In the **Add existing SQL Server instances** page, click on **Connect SQL Server instances**. 
 
@@ -43,10 +43,9 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
      - **Operating Systems**: Select **Windows(4)**
      - **Server Name**: Enter **SQLVM2016(5)**
      - **License Type**: Select **I want to license my production environment on this server with Enterprise or Standard edition using pay-as-you-go ("PAYG")(6)**
-     - Now, click on the **Next: Tags (7)** button. 
-         
+     - Now, click on the **Next: Tags (7)** button.   
 
-      ![](media/E2T1S5.png) 
+         ![](media/E2T1S5.png) 
     
 1. In the **Tags** tab, keep it default and click on **Next: Run script**.
 
@@ -138,9 +137,9 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
 
 1. Navigate to the browser tab where the **Azure Portal** is open and search for **Azure Arc**.
    
-1. On **Azure Arc | SQL Server instances** page click on **SQL Servers instances** **(1)** under **Data Service** section from left-menu and select the **SQLVM2016_CB2016SQLSERVER** **(2)** instance. 
+1. On **Azure Arc | SQL servers** page click on **SQL servers** **(1)** under **Data Service** section from left-menu and select the **SQLVM2016_CB2016SQLSERVER** **(2)** instance. 
 
-   ![](media/E2T3S2.png)
+   ![](media/ex2-p1t3p1.png)
 
    > **Note**: If you are not able to view **SQLVM2016_CB2016SQLSERVER** SQL Server instances wait for 15-20 minutes and keep refreshing the page.
 
@@ -160,7 +159,7 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
 
 1. Once the assessment results status changes from **Partially Succeeded** to **Completed**, click on the **start date** to view results. 
 
-   ![](media/E2T3S6.png)
+   ![](media/ex2-p1t3p2.png)
 
 1. On the **SQL best practices assessment results** page, you will be able to view and explore the assessment result.
 
@@ -176,7 +175,7 @@ In this task, we are going to enable Microsoft Defender for SQL to provide advan
 
    > **Note:** Skip this step if Microsoft Defender for Cloud is already enabled for your subscription.
 
-1. Navigate back to **Microsoft Defender for Cloud** page, click on **Environment settings** **(1)** under **Management** from the left menu and expand the **Tenant Root Group** **(2)**, click on **eclipse** **(3)** button next to your subscriptions, and click on **Edit settings** **(4)**.
+1. Navigate back to **Microsoft Defender for Cloud** page, click on **Environment settings** **(1)** under **Management** from the left menu and then scroll down and expand the **Tenant Root Group** **(2)**, click on **ellipsis (...)** **(3)** button next to your subscriptions, and click on **Edit settings** **(4)**.
 
    ![](media/E2T4S2.png)
 
