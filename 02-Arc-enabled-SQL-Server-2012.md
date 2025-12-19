@@ -160,7 +160,7 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
 
 1. Once the assessment results status changes from **Partially Succeeded** to **Completed**, click on the **start date** to view results. 
 
-   ![](media/asmnt.png)
+   ![](media/upasmnt.png)
 
 1. On the **SQL best practices assessment results** page, you will be able to view and explore the assessment result.
 
