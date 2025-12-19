@@ -138,7 +138,7 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
 
 1. Navigate to the browser tab where the **Azure Portal** is open and search for **Azure Arc**.
    
-1. On **Azure Arc | SQL Server instances** page click on **SQL Servers instances** **(1)** under **Data Service** section from left-menu and select the **SQLVM2016_CB2016SQLSERVER** **(2)** instance. 
+1. On **Azure Arc | SQL servers** page click on **SQL servers** **(1)** under **Data Service** section from left-menu and select the **SQLVM2016_CB2016SQLSERVER** **(2)** instance. 
 
    ![](media/cb16.png)
 
