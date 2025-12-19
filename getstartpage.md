@@ -1,6 +1,6 @@
 # Azure Arc enabled SQL Servers - Single Pane of Glass
 
-### Overall Estimated Duration: 4 hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -51,7 +51,7 @@ Welcome to your Azure Arc-enabled SQL Servers - Single Pane of Glass workshop! W
  
 Once you're ready to dive in, your **Virtual Machine** and **Guide** will be right at your fingertips within your web browser.
 
-![](media/Labintro.png)
+![](media/upLabintro.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -87,21 +87,21 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    ![](media//portal.png)
 
-1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following **email/username**, and click on **Next**. 
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following **email/username (1)**, and click on **Next (2)**. 
 
    * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
    
-      ![](media/GS7.png)
+      ![](media/usr1.png)
      
-1. Now enter the following **password** and click on **Sign in**.
+1. Now enter the following **Password (1)** and click on **Sign in (2)**.
    
    * **Password:** <inject key="AzureAdUserPassword"></inject>
    
-      ![](media/GS8.png)
+      ![](media/tap.png)
 
 1. If prompted to stay signed in, you can click **No**.
 
-   ![](media/GS9.png)
+   ![](media/staysign.png)
 
 1. Now you will see the **Azure Portal** dashboard, then click on **Resource groups** from the **Navigate** panel to see the **Resource groups**.
 
