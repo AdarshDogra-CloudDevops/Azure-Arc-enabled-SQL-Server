@@ -21,13 +21,13 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
   
    ![](media/E1T1S1.png) 
     
-1. On the **Azure Arc | SQL Server instances** page, from the left navigation pane under **Data services** select **SQL Server instances (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.    
+1. On the **Azure Arc | SQL servers** page, from the left navigation pane under **Data services** select **SQL servers (1)**, then click on the **+ Add (2)** to create **SQL Server Azure Arc**.    
   
-   ![](media/E2T1S2.png)
+   ![](media/sq2.png)
     
 1. In the **Add existing SQL Server instances** page, click on **Connect SQL Server instances**. 
 
-   ![](media/E1T1S3.png) 
+   ![](media/cssi.png) 
 
 1. In the **Connect SQL Server enabled by Azure Arc** page, under the **Prerequisites** tab, you can explore the page and then click on the **Next: Server details** from the bottom.    
 
@@ -46,7 +46,7 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
      - Now, click on the **Next: Tags (7)** button. 
          
 
-      ![](media/E2T1S5.png) 
+      ![](media/16det.png) 
     
 1. In the **Tags** tab, keep it default and click on **Next: Run script**.
 
@@ -54,7 +54,7 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
   
 1. In the **Run script** tab, explore the given script under **Download or copy the following script**. Then copy the script by clicking **Copy to Clipboard (1)**, and paste the code into **Notepad**. Later, we will be using this PowerShell script to **Register Azure Arc enabled SQL Server**.  
        
-   ![](media/E1T1S7.png) 
+   ![](media/upE1T1S7.png) 
 
 1. Minimize the **Browser** window.  
 
@@ -86,7 +86,7 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
  
 1. From the start menu of the **sqlvm2016**, search for **PowerShell (1)**, and right click on **Windows PowerShell ISE (2)** then select **Run as administrator (3)**.
   
-   ![](media/az-ex1-3.png) 
+   ![](media/pise2.png) 
    
 1. In **Windows PowerShell ISE**, click on **Show Script Pane**. 
   
@@ -102,27 +102,27 @@ In this task, you are going to connect your on-prem Hyper-V SQL Server VM to Azu
  
 1. Copy the **authenticate code**. 
  
-   ![](media/Ex1-Task2-Step6.png) 
+   ![](media/upEx1-Task2-Step6.png) 
  
 1. In **sqlvm2016**, use a web browser to open the page **https://microsoft.com/devicelogin**, then enter the **authenticate code (1)** and click on **Next (2)**.  
  
-   ![](media/Link-code-login.png) 
+   ![](media/codeauth.png) 
   
 1. On the **Sign in** tab, You're signing in to **Microsoft Azure Cross-platform Command Line Interface**. Enter the following **Email/Username (1)** and then click on **Next (2)**.  
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
-     ![](media/corsspf-username.png "Enter Email")
+     ![](media/usr.png "Enter Email")
     
 1. Now, enter the **Password (1)** then click on **Sign in (2)** 
       
    * **Password**: <inject key="AzureAdUserPassword"></inject> 
 
-     ![](media/GS8.png "Enter Password")
+     ![](media/tap.png "Enter Password")
       
 1. When **Are you trying to sign into Microsoft Azure CLI?** prompted, click on **Continue** and minimize the Browser window. 
  
-   ![](media/crosspf-continue.png) 
+   ![](media/try.png) 
  
 1. In 5-10 minutes, you will see that the script execution is completed and then make sure that you see the following output: **SQL Server is successfully installed**. 
 
@@ -140,13 +140,13 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
    
 1. On **Azure Arc | SQL Server instances** page click on **SQL Servers instances** **(1)** under **Data Service** section from left-menu and select the **SQLVM2016_CB2016SQLSERVER** **(2)** instance. 
 
-   ![](media/E2T3S2.png)
+   ![](media/cb16.png)
 
    > **Note**: If you are not able to view **SQLVM2016_CB2016SQLSERVER** SQL Server instances wait for 15-20 minutes and keep refreshing the page.
 
 1. Click on **Best practices assessment (1)** under **Settings** section from left-menu, from Log Analytics workspaces select the **Arc-SQL-workspace-<inject  key="Deployment ID" enableCopy="false"/> (2)** from drop-down, and click on **Enable assessment (3)**.
    
-   ![](media/E2T3S3.png)
+   ![](media/enass.png)
    
    > **Note**: Please wait while assessment settings are being refreshed. It will initiate and redirect to the deployments page.   
 
@@ -160,11 +160,11 @@ In this task, you will learn to enable best practices assessment for an Azure Ar
 
 1. Once the assessment results status changes from **Partially Succeeded** to **Completed**, click on the **start date** to view results. 
 
-   ![](media/E2T3S6.png)
+   ![](media/asmnt.png)
 
 1. On the **SQL best practices assessment results** page, you will be able to view and explore the assessment result.
 
-   ![](media/E2T3S7.png)
+   ![](media/asmnt2.png)
 
 ## Task 4: Enable Microsoft Defender for SQL
 
@@ -178,11 +178,11 @@ In this task, we are going to enable Microsoft Defender for SQL to provide advan
 
 1. Navigate back to **Microsoft Defender for Cloud** page, click on **Environment settings** **(1)** under **Management** from the left menu and expand the **Tenant Root Group** **(2)**, click on **eclipse** **(3)** button next to your subscriptions, and click on **Edit settings** **(4)**.
 
-   ![](media/E2T4S2.png)
+   ![](media/trg.png)
 
 1. On **Settings | Defender plans** page, set the toggle button next to **Databases** to **On** **(1)** and then click on **Save** **(2)**.
 
-   ![](media/E2T4S3.png) 
+   ![](media/ons.png) 
 
 1. Navigate to **SQLVM2016_CB2016SQLSERVER | Microsoft Defender for Cloud**, observe that the **Recommendations** and **Security incidents and alerts** are populated.
 
